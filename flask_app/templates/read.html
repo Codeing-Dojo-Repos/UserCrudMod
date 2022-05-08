@@ -30,7 +30,7 @@
             <td>{{u.first_name}}</td>
             <td>{{u.last_name}}</td>
             <td>{{u.email}}</td>
-            <td>{{u.created_at}}</td>
+            <td>{{u.created_at.strftime("%B %d %Y")}}</td>
             <td><a href="/user/read/{{u.id}}">Show</a> | 
                 <a href="/user/edit/{{u.id}}">Edit</a> | 
                 <a href="/user/delete/{{u.id}}">Delete</a></td>
